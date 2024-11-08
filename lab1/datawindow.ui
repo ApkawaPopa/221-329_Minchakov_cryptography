@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataWindow::DataWindow</class>
+ <widget class="QWidget" name="DataWindow::DataWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>688</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DataWindow</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="txtSearch">
+     <property name="placeholderText">
+      <string>Введите адрес сайта</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="lstCredentials">
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget::item {
+	padding: 10px;
+	border: 1px solid lightgrey;
+	margin: 5px;
+	border-radius: 5px;
+	outline: none;
+}
+
+QListWidget::item::hover {
+	background-color: rgb(136, 23, 152);
+	outline: none;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
